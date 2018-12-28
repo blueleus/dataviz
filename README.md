@@ -8,3 +8,10 @@ Sigue el tutorial completo [aquí](http://newcoder.io/dataviz)
 ```bash
 sudo apt-get install python3-dev python3-pip python3-virtualenv python3 python3-tk
 ```
+
+### Porque no se puede instalar python3-tk con pip
+No puede instalar python-tk usando pip!
+Como tk es TkInter (-> Interfaz a TK, que está escrito en C(++)), debe instalar el TK de la biblioteca de C(++).
+
+no puede instalar esta biblioteca usando pip, ya que pipestá diseñado para instalar (principalmente) paquetes de python puros.
+Fuente [aquí](https://askubuntu.com/questions/505141/unable-to-install-import-tkinter)
